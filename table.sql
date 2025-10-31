@@ -46,7 +46,7 @@ CREATE TABLE transactions (
   	CONSTRAINT fk_tx_service FOREIGN KEY (service_id) REFERENCES services(id)
 ) ENGINE=InnoDB;
 
-INSERT INTO products(service_code,name,service_icon,cost) VALUES
+INSERT INTO services(service_code,name,service_icon,cost) VALUES
 ('PAJAK','Pajak PBB',"https://nutech-integrasi.app/dummy.jpg",40000),
 ('PLN','Listrik',"https://nutech-integrasi.app/dummy.jpg",10000),
 ('PDAM','PDAM Berlangganan',"https://nutech-integrasi.app/dummy.jpg",40000),
@@ -57,7 +57,7 @@ INSERT INTO products(service_code,name,service_icon,cost) VALUES
 ('VOUCHER_GAME','Voucher Game',"https://nutech-integrasi.app/dummy.jpg",100000),
 ('VOUCHER_MAKANAN','Voucher Makanan',"https://nutech-integrasi.app/dummy.jpg",100000),
 ('QURBAN','Qurban',"https://nutech-integrasi.app/dummy.jpg",200000),
-('ZAKAT','Zakat',"https://nutech-integrasi.app/dummy.jpg",300000)
+('ZAKAT','Zakat',"https://nutech-integrasi.app/dummy.jpg",300000);
 
 
 INSERT INTO banners(name,image,description) VALUES
