@@ -23,4 +23,5 @@ app.use("/", router);
 app.use((req, res) => res.status(404).json({ message: "Not Found" }));
 app.use(errorHandler);
 
-export default app;
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log("Running on :" + port));
